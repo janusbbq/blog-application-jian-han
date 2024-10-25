@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Graph author="quanchengli" created="Wed Apr 10 10:54:14 PDT 2024" guiVersion="6.4.0.6" id="1712788151585" licenseCode="Unlicensed" name="Used-nutrition" showComponentDetails="true">
+<Global>
+<Metadata id="Metadata1">
+<Record fieldDelimiter="|" name="DB" previewAttachmentCharset="UTF-8" recordDelimiter="\n" type="delimited">
+<Field name="FoodId" type="integer"/>
+<Field name="name" type="string"/>
+<Field name="used" type="integer"/>
+</Record>
+</Metadata>
+<Metadata id="Metadata4">
+<Record fieldDelimiter=";" name="Foods" recordDelimiter="\n" type="delimited">
+<Field name="Name" size="255" type="string"/>
+<Field name="Used" size="10" type="integer"/>
+</Record>
+</Metadata>
+<Metadata id="Metadata2" previewAttachmentCharset="UTF-8">
+<Record fieldDelimiter="|" name="Joined1" previewAttachmentCharset="UTF-8" recordDelimiter="\n" type="delimited">
+<Field name="FoodId" trim="true" type="integer"/>
+<Field name="FoodName" type="string"/>
+<Field name="Used" trim="true" type="integer"/>
+<Field length="12" name="Calories" scale="2" trim="true" type="decimal"/>
+<Field length="12" name="fat_total_g" scale="2" trim="true" type="decimal"/>
+<Field length="12" name="protein_g" scale="2" trim="true" type="decimal"/>
+<Field length="12" name="sodium_mg" scale="2" trim="true" type="decimal"/>
+<Field length="12" name="sugar_g" scale="2" trim="true" type="decimal"/>
+</Record>
+</Metadata>
+<Metadata id="Metadata3">
+<Record fieldDelimiter="," name="nutrition_info1" previewAttachment="${DATAIN_DIR}/nutrition_info1.csv" previewAttachmentCharset="UTF-8" quoteChar="both" quotedStrings="false" recordDelimiter="\r\n" skipSourceRows="1" type="delimited">
+<Field name="name" type="string"/>
+<Field name="calories" type="decimal"/>
+<Field name="serving_size_g" type="decimal"/>
+<Field name="fat_total_g" type="decimal"/>
+<Field name="fat_saturated_g" type="decimal"/>
+<Field name="protein_g" type="decimal"/>
+<Field name="sodium_mg" type="decimal"/>
+<Field name="potassium_mg" type="decimal"/>
+<Field name="cholesterol_mg" type="decimal"/>
+<Field name="carbohydrates_total_g" type="decimal"/>
+<Field name="fiber_g" type="decimal"/>
+<Field eofAsDelimiter="true" name="sugar_g" type="decimal"/>
+</Record>
+</Metadata>
+<Metadata id="Metadata0">
+<Record fieldDelimiter="," name="nutrition_info1" previewAttachment="${DATAIN_DIR}/nutrition_info1.csv" previewAttachmentCharset="UTF-8" quoteChar="both" quotedStrings="false" recordDelimiter="\r\n" skipSourceRows="1" type="delimited">
+<Field name="name" type="string"/>
+<Field name="calories" type="decimal"/>
+<Field name="serving_size_g" type="decimal"/>
+<Field name="fat_total_g" type="decimal"/>
+<Field name="fat_saturated_g" type="decimal"/>
+<Field name="protein_g" type="decimal"/>
+<Field name="sodium_mg" type="decimal"/>
+<Field name="potassium_mg" type="decimal"/>
+<Field name="cholesterol_mg" type="decimal"/>
+<Field name="carbohydrates_total_g" type="decimal"/>
+<Field name="fiber_g" type="decimal"/>
+<Field eofAsDelimiter="true" name="sugar_g" type="decimal"/>
+</Record>
+</Metadata>
+<Connection database="MYSQL" dbURL="jdbc:mysql://Localhost:3306/ChineseFlavors" id="JDBC0" jdbcSpecific="MYSQL" name="NewConnection" password="lqc742698" type="JDBC" user="root2"/>
+<GraphParameters>
+<GraphParameterFile fileURL="workspace.prm"/>
+</GraphParameters>
+<Dictionary/>
+</Global>
+<Phase number="0">
+<Node dbConnection="JDBC0" guiName="DatabaseReader" guiX="142" guiY="171" id="DATABASE_READER" type="DB_INPUT_TABLE">
+<attr name="sqlQuery"><![CDATA[SELECT * FROM Foods ORDER BY FoodId]]></attr>
+</Node>
+<Node guiName="ExtHashJoin" guiX="378" guiY="264" id="EXT_HASH_JOIN" joinKey="$name=$name" joinType="inner" type="EXT_HASH_JOIN">
+<attr name="transform"><![CDATA[//#CTL2
+
+// Transforms input record into output record.
+function integer transform() {
+	$out.0.FoodId = nvl($in.0.FoodId,0);
+	$out.0.FoodName = nvl($in.0.name,"NoData");
+	$out.0.Used = nvl($in.0.used,0);
+	$out.0.Calories = nvl($in.1.calories,0);
+	$out.0.fat_total_g = nvl($in.1.fat_total_g,0);
+	$out.0.protein_g = nvl($in.1.protein_g,0);
+	$out.0.sodium_mg = nvl($in.1.sodium_mg,0);
+	$out.0.sugar_g = nvl($in.1.sugar_g,0);
+
+	return ALL;
+}
+
+// Called during component initialization.
+// function boolean init() {}
+
+// Called during each graph run before the transform is executed. May be used to allocate and initialize resources
+// required by the transform. All resources allocated within this method should be released
+// by the postExecute() method.
+// function void preExecute() {}
+
+// Called only if transform() throws an exception.
+// function integer transformOnError(string errorMessage, string stackTrace) {}
+
+// Called during each graph run after the entire transform was executed. Should be used to free any resources
+// allocated within the preExecute() method.
+// function void postExecute() {}
+
+// Called to return a user-defined error message when an error occurs.
+// function string getMessage() {}
+]]></attr>
+</Node>
+<Node fileURL="${DATAIN_DIR}/nutrition_info.csv" guiName="FlatFileReader" guiX="142" guiY="310" id="FLAT_FILE_READER" trim="true" type="FLAT_FILE_READER"/>
+<Node existingSheetsActions="DO_NOTHING" fileURL="${DATAOUT_DIR}/CF_out.xlsx" guiName="SpreadsheetDataWriter" guiX="574" guiY="264" id="SPREADSHEET_DATA_WRITER" type="SPREADSHEET_WRITER" writeMode="OVERWRITE_SHEET_IN_MEMORY"/>
+<Edge fromNode="DATABASE_READER:0" guiBendpoints="" guiRouter="Manhattan" id="Edge0" inPort="Port 0 (driver)" metadata="Metadata1" outPort="Port 0 (out)" toNode="EXT_HASH_JOIN:0"/>
+<Edge fromNode="EXT_HASH_JOIN:0" guiBendpoints="" guiRouter="Manhattan" id="Edge2" inPort="Port 0 (input)" metadata="Metadata2" outPort="Port 0 (out)" toNode="SPREADSHEET_DATA_WRITER:0"/>
+<Edge fromNode="FLAT_FILE_READER:0" guiBendpoints="" guiRouter="Manhattan" id="Edge1" inPort="Port 1 (slave)" metadata="Metadata0" outPort="Port 0 (output)" toNode="EXT_HASH_JOIN:1"/>
+</Phase>
+</Graph>

@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Graph author="qifenghuang" created="Tue Apr 09 14:52:15 PDT 2024" guiVersion="6.4.0.6" id="1712700655843" licenseCode="Unlicensed" name="exercise1" showComponentDetails="true">
+<Global>
+<Metadata id="Metadata1">
+<Record fieldDelimiter="|" name="Aggregated" previewAttachmentCharset="UTF-8" recordDelimiter="\n" type="delimited">
+<Field name="NER" type="string"/>
+<Field name="Count" type="integer"/>
+</Record>
+</Metadata>
+<Metadata id="Metadata4">
+<Record fieldDelimiter="|" name="aggregatedChinese" previewAttachmentCharset="UTF-8" recordDelimiter="\n" type="delimited">
+<Field label="course" name="ingredient" type="string"/>
+<Field name="count" type="integer"/>
+</Record>
+</Metadata>
+<Metadata id="Metadata0">
+<Record fieldDelimiter=";" name="BlogPosts" recordDelimiter="\n" type="delimited">
+<Field format="MM/dd/yyyy" name="Created" size="19" type="date"/>
+</Record>
+</Metadata>
+<Metadata id="Metadata7">
+<Record fieldDelimiter="," name="Chinese" previewAttachment="/Users/qifenghuang/Desktop/NEU/CS5200/myWork/PM5/Chinese.csv" previewAttachmentCharset="UTF-8" quoteChar="&quot;" quotedStrings="true" recordDelimiter="\r\n" skipSourceRows="1" type="delimited">
+<Field label="flavors" name="flavors" type="string"/>
+<Field label="cuisine" name="cuisine" type="string"/>
+<Field label="name" name="name" type="string"/>
+<Field label="ingredients/0" name="ingredients_0" type="string"/>
+<Field label="ingredients/1" name="ingredients_1" type="string"/>
+<Field label="ingredients/2" name="ingredients_2" type="string"/>
+<Field label="ingredients/3" name="ingredients_3" type="string"/>
+<Field label="ingredients/4" name="ingredients_4" type="string"/>
+<Field label="ingredients/5" name="ingredients_5" type="string"/>
+<Field label="ingredients/6" name="ingredients_6" type="string"/>
+<Field label="course/0" name="course_0" type="string"/>
+<Field label="id" name="id" type="string"/>
+<Field label="flavors/piquant" name="flavors_piquant" type="string"/>
+<Field label="flavors/sour" name="flavors_sour" type="string"/>
+<Field label="flavors/salty" name="flavors_salty" type="string"/>
+<Field label="flavors/sweet" name="flavors_sweet" type="string"/>
+<Field label="flavors/bitter" name="flavors_bitter" type="string"/>
+<Field label="flavors/meaty" name="flavors_meaty" type="string"/>
+<Field label="ingredients/7" name="ingredients_7" type="string"/>
+<Field label="ingredients/8" name="ingredients_8" type="string"/>
+<Field label="ingredients/9" name="ingredients_9" type="string"/>
+<Field label="ingredients/10" name="ingredients_10" type="string"/>
+<Field label="ingredients/11" name="ingredients_11" type="string"/>
+<Field label="ingredients/12" name="ingredients_12" type="string"/>
+<Field label="ingredients/13" name="ingredients_13" type="string"/>
+<Field label="ingredients/14" name="ingredients_14" type="string"/>
+<Field label="ingredients/15" name="ingredients_15" type="string"/>
+<Field label="ingredients/16" name="ingredients_16" type="string"/>
+<Field label="ingredients/17" name="ingredients_17" type="string"/>
+<Field label="course/1" name="course_1" type="string"/>
+<Field label="course/2" name="course_2" type="string"/>
+<Field label="ingredients/18" name="ingredients_18" type="string"/>
+<Field label="ingredients/19" name="ingredients_19" type="string"/>
+<Field label="ingredients/20" name="ingredients_20" type="string"/>
+<Field label="ingredients/21" name="ingredients_21" type="string"/>
+<Field label="ingredients/22" name="ingredients_22" type="string"/>
+<Field label="ingredients/23" name="ingredients_23" type="string"/>
+<Field label="ingredients/24" name="ingredients_24" type="string"/>
+<Field label="ingredients/25" name="ingredients_25" type="string"/>
+<Field label="ingredients/26" name="ingredients_26" type="string"/>
+<Field label="ingredients/27" name="ingredients_27" type="string"/>
+<Field label="ingredients/28" name="ingredients_28" type="string"/>
+<Field label="ingredients/29" name="ingredients_29" type="string"/>
+<Field label="ingredients/30" name="ingredients_30" type="string"/>
+<Field label="ingredients/31" name="ingredients_31" type="string"/>
+<Field label="ingredients/32" name="ingredients_32" type="string"/>
+<Field label="ingredients/33" name="ingredients_33" type="string"/>
+<Field label="ingredients/34" name="ingredients_34" type="string"/>
+<Field label="ingredients/35" name="ingredients_35" type="string"/>
+<Field label="ingredients/36" name="ingredients_36" type="string"/>
+<Field label="ingredients/37" name="ingredients_37" type="string"/>
+<Field label="ingredients/38" name="ingredients_38" type="string"/>
+<Field label="ingredients/39" name="ingredients_39" type="string"/>
+<Field label="ingredients/40" name="ingredients_40" type="string"/>
+<Field label="ingredients/41" name="ingredients_41" type="string"/>
+<Field label="ingredients/42" name="ingredients_42" type="string"/>
+<Field label="flavors/Sweet" name="flavors_Sweet" type="string"/>
+<Field label="flavors/Sour" name="flavors_Sour" type="string"/>
+<Field label="flavors/Salty" name="flavors_Salty" type="string"/>
+<Field label="flavors/Piquant" name="flavors_Piquant" type="string"/>
+<Field label="flavors/Bitter" name="flavors_Bitter" type="string"/>
+<Field eofAsDelimiter="true" label="flavors/Meaty" name="flavors_Meaty" type="string"/>
+</Record>
+</Metadata>
+<Metadata id="Metadata8">
+<Record fieldDelimiter="," name="Chinese" previewAttachment="/Users/qifenghuang/Desktop/NEU/CS5200/myWork/PM5/Chinese.csv" previewAttachmentCharset="UTF-8" quoteChar="&quot;" quotedStrings="true" recordDelimiter="\r\n" skipSourceRows="1" type="delimited">
+<Field label="flavors" name="flavors" type="string"/>
+<Field label="cuisine" name="cuisine" type="string"/>
+<Field label="name" name="name" type="string"/>
+<Field label="ingredients/0" name="ingredients_0" type="string"/>
+<Field label="ingredients/1" name="ingredients_1" type="string"/>
+<Field label="ingredients/2" name="ingredients_2" type="string"/>
+<Field label="ingredients/3" name="ingredients_3" type="string"/>
+<Field label="ingredients/4" name="ingredients_4" type="string"/>
+<Field label="ingredients/5" name="ingredients_5" type="string"/>
+<Field label="ingredients/6" name="ingredients_6" type="string"/>
+<Field label="course/0" name="course_0" type="string"/>
+<Field label="id" name="id" type="string"/>
+<Field label="flavors/piquant" name="flavors_piquant" type="string"/>
+<Field label="flavors/sour" name="flavors_sour" type="string"/>
+<Field label="flavors/salty" name="flavors_salty" type="string"/>
+<Field label="flavors/sweet" name="flavors_sweet" type="string"/>
+<Field label="flavors/bitter" name="flavors_bitter" type="string"/>
+<Field label="flavors/meaty" name="flavors_meaty" type="string"/>
+<Field label="ingredients/7" name="ingredients_7" type="string"/>
+<Field label="ingredients/8" name="ingredients_8" type="string"/>
+<Field label="ingredients/9" name="ingredients_9" type="string"/>
+<Field label="ingredients/10" name="ingredients_10" type="string"/>
+<Field label="ingredients/11" name="ingredients_11" type="string"/>
+<Field label="ingredients/12" name="ingredients_12" type="string"/>
+<Field label="ingredients/13" name="ingredients_13" type="string"/>
+<Field label="ingredients/14" name="ingredients_14" type="string"/>
+<Field label="ingredients/15" name="ingredients_15" type="string"/>
+<Field label="ingredients/16" name="ingredients_16" type="string"/>
+<Field label="ingredients/17" name="ingredients_17" type="string"/>
+<Field label="course/1" name="course_1" type="string"/>
+<Field label="course/2" name="course_2" type="string"/>
+<Field label="ingredients/18" name="ingredients_18" type="string"/>
+<Field label="ingredients/19" name="ingredients_19" type="string"/>
+<Field label="ingredients/20" name="ingredients_20" type="string"/>
+<Field label="ingredients/21" name="ingredients_21" type="string"/>
+<Field label="ingredients/22" name="ingredients_22" type="string"/>
+<Field label="ingredients/23" name="ingredients_23" type="string"/>
+<Field label="ingredients/24" name="ingredients_24" type="string"/>
+<Field label="ingredients/25" name="ingredients_25" type="string"/>
+<Field label="ingredients/26" name="ingredients_26" type="string"/>
+<Field label="ingredients/27" name="ingredients_27" type="string"/>
+<Field label="ingredients/28" name="ingredients_28" type="string"/>
+<Field label="ingredients/29" name="ingredients_29" type="string"/>
+<Field label="ingredients/30" name="ingredients_30" type="string"/>
+<Field label="ingredients/31" name="ingredients_31" type="string"/>
+<Field label="ingredients/32" name="ingredients_32" type="string"/>
+<Field label="ingredients/33" name="ingredients_33" type="string"/>
+<Field label="ingredients/34" name="ingredients_34" type="string"/>
+<Field label="ingredients/35" name="ingredients_35" type="string"/>
+<Field label="ingredients/36" name="ingredients_36" type="string"/>
+<Field label="ingredients/37" name="ingredients_37" type="string"/>
+<Field label="ingredients/38" name="ingredients_38" type="string"/>
+<Field label="ingredients/39" name="ingredients_39" type="string"/>
+<Field label="ingredients/40" name="ingredients_40" type="string"/>
+<Field label="ingredients/41" name="ingredients_41" type="string"/>
+<Field label="ingredients/42" name="ingredients_42" type="string"/>
+<Field label="flavors/Sweet" name="flavors_Sweet" type="string"/>
+<Field label="flavors/Sour" name="flavors_Sour" type="string"/>
+<Field label="flavors/Salty" name="flavors_Salty" type="string"/>
+<Field label="flavors/Piquant" name="flavors_Piquant" type="string"/>
+<Field label="flavors/Bitter" name="flavors_Bitter" type="string"/>
+<Field eofAsDelimiter="true" label="flavors/Meaty" name="flavors_Meaty" type="string"/>
+</Record>
+</Metadata>
+<Metadata id="Metadata6">
+<Record fieldDelimiter="," name="dataset" previewAttachment="/Users/qifenghuang/Desktop/NEU/CS5200/myWork/PM5/dataset.csv" previewAttachmentCharset="UTF-8" quoteChar="&quot;" quotedStrings="true" recordDelimiter="\r\n" skipSourceRows="1" type="delimited">
+<Field label="Unnamed: 0" name="Unnamed_0" type="integer"/>
+<Field label="title" name="title" type="string"/>
+<Field label="ingredients" name="ingredients" type="string"/>
+<Field label="directions" name="directions" type="string"/>
+<Field label="link" name="link" type="string"/>
+<Field label="source" name="source" type="string"/>
+<Field eofAsDelimiter="true" label="NER" name="NER" size="1" trim="false" type="string"/>
+</Record>
+</Metadata>
+<Metadata id="Metadata2">
+<Record fieldDelimiter=";" name="recipes" previewAttachmentCharset="UTF-8" recordDelimiter="\n" type="delimited">
+<Field name="NER" type="string"/>
+</Record>
+</Metadata>
+<Metadata id="Metadata5">
+<Record fieldDelimiter=";" name="recipes" recordDelimiter="\n" type="delimited">
+<Field name="link" size="255" type="string"/>
+</Record>
+</Metadata>
+<Metadata id="Metadata3">
+<Record fieldDelimiter=";" name="sugarOrButter" previewAttachmentCharset="UTF-8" recordDelimiter="\n" type="delimited">
+<Field name="NER" size="255" type="string"/>
+</Record>
+</Metadata>
+<Connection database="MYSQL" dbURL="jdbc:mysql://localhost:3306/BlogApplication" id="JDBC0" jdbcSpecific="MYSQL" name="NewConnection" password="Qwe@1232468" type="JDBC" user="root"/>
+<Connection database="MYSQL" dbURL="jdbc:mysql://localhost:3306/ChineseFlavors" id="JDBC1" jdbcSpecific="MYSQL" name="NewConnection" password="Qwe@1232468" type="JDBC" user="root"/>
+<GraphParameters>
+<GraphParameterFile fileURL="workspace.prm"/>
+</GraphParameters>
+<RichTextNote backgroundColor="FAF6D6" folded="false" fontSize="medium" height="241" id="Note0" textColor="444444" width="180" x="21" y="85">
+<attr name="text"><![CDATA[h3. Extract
+]]></attr>
+</RichTextNote>
+<RichTextNote backgroundColor="FAF6D6" folded="false" fontSize="medium" height="267" id="Note1" textColor="444444" width="171" x="295" y="83">
+<attr name="text"><![CDATA[h3. Transform
+]]></attr>
+</RichTextNote>
+<RichTextNote backgroundColor="FAF6D6" folded="false" fontSize="medium" height="243" id="Note2" textColor="444444" width="182" x="623" y="83">
+<attr name="text"><![CDATA[h3. Load
+]]></attr>
+</RichTextNote>
+<Dictionary/>
+</Global>
+<Phase number="0">
+<Node aggregateKey="ingredients_0" guiName="Aggregate" guiX="317" guiY="141" id="AGGREGATE" mapping="$ingredient:=$ingredients_0;$count:=count();" sorted="false" type="AGGREGATE"/>
+<Node dbConnection="JDBC1" dbTable="DWChinese2" fieldMap="$ingredient:=Course;$count:=Counts;" guiName="DatabaseWriter" guiX="650" guiY="237" id="DATABASE_WRITER" type="DB_OUTPUT_TABLE"/>
+<Node dataPolicy="lenient" fileURL="/Users/qifenghuang/Desktop/NEU/CS5200/myWork/PM5/Chinese.csv" guiName="FlatFileReader" guiX="47" guiY="141" id="FLAT_FILE_READER" trim="true" type="FLAT_FILE_READER"/>
+<Node existingSheetsActions="CLEAR_SHEETS" fileURL="${DATAOUT_DIR}/chinese2.xlsx" guiName="SpreadsheetDataWriter" guiX="633" guiY="141" id="SPREADSHEET_DATA_WRITER1" type="SPREADSHEET_WRITER" writeMode="OVERWRITE_SHEET_IN_MEMORY">
+<attr name="mapping"><![CDATA[<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<mapping>
+    <globalAttributes>
+        <step>1</step>
+        <orientation>VERTICAL</orientation>
+        <writeHeader>true</writeHeader>
+    </globalAttributes>
+    <defaultSkip>1</defaultSkip>
+    <headerGroups>
+        <headerGroup skip="1">
+            <cloverField>ingredient</cloverField>
+            <headerRanges>
+                <headerRange begin="A1"/>
+            </headerRanges>
+        </headerGroup>
+        <headerGroup skip="1">
+            <cloverField>count</cloverField>
+            <headerRanges>
+                <headerRange begin="B1"/>
+            </headerRanges>
+        </headerGroup>
+    </headerGroups>
+</mapping>
+]]></attr>
+</Node>
+<Edge fromNode="AGGREGATE:0" guiBendpoints="" guiRouter="Manhattan" id="Edge21" inPort="Port 0 (input)" metadata="Metadata4" outPort="Port 0 (out)" toNode="SPREADSHEET_DATA_WRITER1:0"/>
+<Edge fromNode="AGGREGATE:1" guiBendpoints="" guiRouter="Manhattan" id="Edge23" inPort="Port 0 (in)" metadata="Metadata4" outPort="Port 1 (out)" toNode="DATABASE_WRITER:0"/>
+<Edge fromNode="FLAT_FILE_READER:0" guiBendpoints="" guiRouter="Manhattan" id="Edge20" inPort="Port 0 (in)" metadata="Metadata8" outPort="Port 0 (output)" toNode="AGGREGATE:0"/>
+</Phase>
+</Graph>

@@ -1,0 +1,13 @@
+USE BlogApplication;
+INSERT INTO Persons(UserName,FirstName,LastName) VALUES('foo','first','last');
+INSERT INTO BlogUsers(UserName,DoB,StatusLevel) VALUES('foo','1990-04-01','novice');
+INSERT INTO BlogPosts(Title,Content,Published,UserName,Created) VALUES('cats1','cats',True,'foo','2016-11-18 01:00:00');
+INSERT INTO BlogPosts(Title,Content,Published,UserName,Created) VALUES('cats2','cats',True,'foo','2016-11-19 01:00:00');
+INSERT INTO BlogPosts(Title,Content,Published,UserName,Created) VALUES('cats3','cats',True,'foo','2016-11-19 01:00:00');
+INSERT INTO BlogPosts(Title,Content,Published,UserName,Created) VALUES('cats4','cats',True,'foo','2016-11-20 01:00:00');
+INSERT INTO BlogPosts(Title,Content,Published,UserName,Created) VALUES('cats5','cats',True,'foo','2016-11-20 01:00:00');
+INSERT INTO BlogPosts(Title,Content,Published,UserName,Created) VALUES('cats6','cats',True,'foo','2016-11-20 01:00:00');
+INSERT INTO BlogPosts(Title,Content,Published,UserName,Created) VALUES('cats7','cats',True,'foo','2016-11-20 01:00:00');
+INSERT INTO BlogPosts(Title,Content,Published,UserName,Created) VALUES('cats8','cats',True,'foo','2016-11-20 01:00:00');
+DROP TABLE IF EXISTS DWPost;
+CREATE TABLE DWPost (DWPostId INT AUTO_INCREMENT,Created DATE,Count INT,CONSTRAINT pk_DWPost_DWPostId PRIMARY KEY (DWPostId));
